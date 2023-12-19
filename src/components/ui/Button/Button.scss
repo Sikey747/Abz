@@ -1,0 +1,17 @@
+.button {
+  color: var(--mui-palette-text-primary);
+  background-color: var(--mui-palette-primary-main);
+  padding: 0.25rem 1.4375rem;
+  text-transform: none;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 162.5%;
+  border-radius: 5rem;
+  &:hover {
+    background-color: var(--mui-palette-primary-light);
+  }
+  &.Mui-disabled {
+    background-color: var(--mui-palette-action-disabledBackground);
+  }
+}

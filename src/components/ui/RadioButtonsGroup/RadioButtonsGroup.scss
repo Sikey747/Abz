@@ -1,0 +1,18 @@
+.radioButtonsGroup {
+  .MuiFormGroup-root {
+    display: flex;
+    gap: 0.4375rem;
+    .MuiFormControlLabel-root {
+      display: flex;
+      align-items: center;
+      .MuiButtonBase-root.MuiRadio-root.PrivateSwitchBase-root {
+        padding: 0 0 0 0.75rem;
+      }
+      .MuiFormControlLabel-label {
+        margin-left: 0.75rem;
+        font-size: 1rem;
+        line-height: 162.5%;
+      }
+    }
+  }
+}

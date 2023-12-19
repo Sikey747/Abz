@@ -1,0 +1,19 @@
+.MuiPaper-root.MuiAppBar-root {
+  background-color: var(--mui-palette-common-white);
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--mui-palette-common-white);
+  padding: 1.0625rem 0;
+  gap: 0.875rem;
+
+  &__links {
+    display: flex;
+    gap: 0.625rem;
+    align-items: center;
+  }
+}

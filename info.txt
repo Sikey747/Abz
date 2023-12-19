@@ -1,0 +1,56 @@
+https://www.work.ua/jobs/5437122/
+https://drive.google.com/file/d/11XPGP9wrHB-B5aLlBCRLXHVA2yvM2QhY/view
+https://apidocs.abz.dev/test_assignment_for_frontend_developer_api_documentation#
+
+4. Website optimization (bonus task). Minimize and optimize css, js, images, etc. To do this, you need to
+deploy your work on any hosting available to you and send any domain available to you to it.
+a. Check your work using Google Page Speed and make sure your work is in the green zone.
+b. Check your work using Google Chrome Performance Audit / Lighthouse and make sure your
+work is in the green zone for Performance, Best practices, SEO (mobile and desktop for 3G).
+c. Check your work using Webpagetest and make sure the scores are close to AAAAAA.
+
+react-maskedinput - классовая маска
+
+react-input-mask  - устаревшая библиотке конфликты с реактовм хотя идеальна во всем
+
+@react-input/mask - не реагирует на прокидование компонента 
+
+!!!!!!!!!!!react-text-mask!!!!!!!!!!!!!!https://text-mask.github.io/text-mask/
+Лучшая библа для масок.
+главнео добавить типизацию через npm
+   <MaskedInput
+      mask={[
+        '+',
+        '3',
+        '8',
+        ' ',
+        '(',
+        /[0-9]/,
+        /\d/,
+        /\d/,
+        /\d/,
+        ')',
+        ' ',
+        /\d/,
+        /\d/,
+        /\d/,
+        '-',
+        /\d/,
+        /\d/,
+        '-',
+        /\d/,
+        /\d/,
+      ]}
+      placeholder={placeholder}
+      id="my-input-id"
+	//важный нюанс реф и пропс беруться из пропсов компонента как бы наследуют передают дальше в низу кода их надо просто назначить .В самой же масске просто надо указать маску плейсхолдер и айди
+      render={(ref, prop) => (
+        <TextField
+          inputRef={ref}
+          className={`input ${className}`}
+          helperText={helperText}
+          error={error}
+          {...prop}
+        />
+      )}
+    />
