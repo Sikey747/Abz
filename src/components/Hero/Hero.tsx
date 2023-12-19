@@ -11,8 +11,7 @@ function Hero() {
         <div className="hero">
           <LazyLoadImage
             alt="background"
-            src="
-            /assets/pexels-alexandr-podvalny-1227513.jpeg"
+            src="assets/pexels-alexandr-podvalny-1227513.jpeg"
             placeholderSrc="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAEALAAAAAABAAEAAAICTAEAOw=="
           />
           <div className="filter" />
